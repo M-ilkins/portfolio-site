@@ -1,0 +1,133 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(78, 78, 78);
+}
+
+.header-container {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(130, 225, 150);
+    margin-bottom: 5%;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 400px;
+    background-color: transparent;
+    margin-bottom: 10%;
+}
+
+@keyframes shrink-img-container {
+    from{
+        width: 100%;
+    }
+
+    to{
+        width: 50%
+    }
+}
+
+.image-container {
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+@keyframes dissolve {
+    from {color: white;}
+    to {
+        color: rgba(255, 255, 255, 0);}
+}
+
+
+#welcome-text {
+    animation-duration: 2s;
+    color: white;
+    position: absolute;
+}
+
+#bio-image {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bio {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid rgb(26, 158, 32);
+    background-color: rgb(50, 50, 50);
+    color: white;
+    width: 50%;
+    height: 100%;
+}
+
+.projects-container {
+    display: flex;
+    width: 100vw;
+    border: 2px solid rgb(225, 88, 111);
+    background-color: blue;
+    margin-bottom: 10%;
+}
+
+.toggle {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    transition-duration: 0.4s;
+    padding: 5px;
+    position: absolute;
+    background-color: blueviolet;
+    top: -25px;
+}
+
+.toggle:hover {
+    box-shadow: 0px 0px 11px 1px #FFFFFF;
+}
+
+.project-img-container {
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+.project-img {
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.project-img:hover {
+    opacity: 1;
+}
+
+.project-info-panel {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    background-color: seagreen;
+}
+
+.footer-container {
+    width: 100vw;
+    background-color: chartreuse;
+}

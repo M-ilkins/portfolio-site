@@ -23,7 +23,7 @@ function shrinkHero() {
   setInterval(()=>{
     const heroImg = document.querySelector('.image-container');
     const bio = document.querySelector('.bio');
-    heroImg.style.width = '100%';
+    heroImg.style.width = '50%';
     bio.style.display = 'flex';
   }, 3000)
 };

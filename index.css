@@ -6,7 +6,14 @@
 }
 
 body {
-    background-color: rgb(78, 78, 78);
+    /* 
+    find a proper color theme!
+    Possibly brown, green, pink ?
+     */
+    background-color: rgb(63, 62, 62);
+    /* background-color: rgb(139, 102, 65); */
+    /* background-color: rgb(112, 83, 53); */
+    /* background-color: rgb(75, 57, 37); */
 }
 
 .header-container {
@@ -64,8 +71,16 @@ body {
     height: 100%;
 }
 
+.project-section-title {
+    color: white;
+    margin-bottom: 10%;
+}
+
+
 .projects-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 80vw;
     margin: auto;
     margin-bottom: 10%;
@@ -106,7 +121,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 50%;
+    width: 100%;
     background-color: rgb(130, 225, 150);
 }
 

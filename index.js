@@ -23,7 +23,7 @@ function shrinkHero() {
   setInterval(()=>{
     const heroImg = document.querySelector('.image-container');
     const bio = document.querySelector('.bio');
-    heroImg.style.width = '50%';
+    heroImg.style.width = '100%';
     bio.style.display = 'flex';
   }, 3000)
 };
@@ -49,16 +49,12 @@ const projectInfoPanel = document.querySelector('.project-info-panel');
 function displayProjectInfo() {
   projectFlag.innerText = 'hide info';
   const projectInfoPanel = document.querySelector('.project-info-panel');
-  const projectImgContainer = document.querySelector('.project-img-container');
-  projectImgContainer.style.width = '50%';
   projectInfoPanel.style.display = 'flex';
 }
 
 function hideProjectInfo() {
   projectFlag.innerText = 'show info';
   const projectInfoPanel = document.querySelector('.project-info-panel');
-  const projectImgContainer = document.querySelector('.project-img-container');
-  projectImgContainer.style.width = '100%';
   projectInfoPanel.style.display = 'none';
 }
 

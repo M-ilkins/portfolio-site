@@ -10,17 +10,17 @@ body {
     find a proper color theme!
     Possibly brown, green, pink ?
      */
-    background-color: rgb(63, 62, 62);
+    /* background-color: rgb(63, 62, 62); */
+    background-color: rgb(42, 42, 42);
     /* background-color: rgb(139, 102, 65); */
     /* background-color: rgb(112, 83, 53); */
     /* background-color: rgb(75, 57, 37); */
+    font-family: 'Mukta', sans-serif;
+    text-align: center;
 }
 
-.header-container {
-    width: 100vw;
-    height: 50px;
-    background-color: rgb(130, 225, 150);
-    margin-bottom: 5%;
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 2px;
 }
 
 .hero-container {
@@ -29,8 +29,9 @@ body {
     width: 80vw;
     margin: auto;
     height: 50vh;
-    background-color: transparent;
+    margin-top: 5%;
     margin-bottom: 10%;
+    box-shadow: 0px 0px 23px 8px rgb(175, 110, 179);
 }
 
 .image-container {
@@ -66,14 +67,15 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: rgb(130, 225, 150);
+    color: white;
+    background-color: rgb(112, 80, 40);
     width: 50%;
     height: 100%;
 }
 
 .project-section-title {
     color: white;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 
@@ -84,6 +86,7 @@ body {
     width: 80vw;
     margin: auto;
     margin-bottom: 10%;
+    box-shadow: 0px 0px 23px 8px rgb(112, 80, 40);
 }
 
 .toggle {
@@ -117,6 +120,8 @@ body {
 }
 
 .project-info-panel {
+    position: relative;
+    top: -10px;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -126,8 +131,12 @@ body {
 }
 
 .footer-container {
-    width: 100vw;
-    background-color: rgb(130, 225, 150);
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(175, 110, 179);
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 23px 8px rgb(130, 225, 150);
 }
 
 @keyframes shrink-img-container {

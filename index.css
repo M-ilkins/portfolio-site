@@ -80,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     width: 80vw;
+    height: 80vh;
     margin: auto;
     margin-bottom: 10%;
     box-shadow: 0px 0px 23px 8px rgb(112, 80, 40);
@@ -103,11 +104,13 @@ h1, h2, h3, h4, h5, h6 {
 .project-img-container {
     position: relative;
     width: 100%;
+    height: 100%;
 }
 
 .project-img {
     opacity: 0.5;
     width: 100%;
+    height: 100%;
 }
 
 .project-img:hover {
@@ -129,8 +132,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     background-color: rgb(175, 110, 179);
     margin-bottom: 5%;
+    margin-top: 10vh;
     box-shadow: 0px 0px 23px 8px rgb(130, 225, 150);
 
+}
+
+.footer-container p, .footer-container h2 {
+    font-size: 1.5rem;
 }
 
 @keyframes shrink-img-container {
@@ -149,10 +157,21 @@ h1, h2, h3, h4, h5, h6 {
         color: rgba(255, 255, 255, 0);}
 }
 
+@media only screen and (max-width: 800px) {
+    .projects-container {
+        height: 50vh;
+    }
+  }
+
 @media only screen and (max-width: 510px) {
     #welcome-text {
         font-size: 0.5rem;
     }
+
+    .projects-container {
+        height: 30vh;
+    }
+
   }
 
   @media only screen and (min-width: 650px) {
@@ -164,6 +183,10 @@ h1, h2, h3, h4, h5, h6 {
   @media only screen and (min-width: 800px) {
     #welcome-text {
         font-size: 1.5rem;
+    }
+
+    .projects-container {
+        height: 50vh;
     }
   }
 

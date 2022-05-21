@@ -19,27 +19,16 @@ setTimeout(typeWriter, 1500);
 //welcome text animation ends here ----------------------------------------
 
 
-function shrinkHero() {
-  setInterval(()=>{
-    const heroImg = document.querySelector('.image-container');
-    const bio = document.querySelector('.bio');
-    heroImg.style.width = '50%';
-    bio.style.display = 'flex';
-  }, 3000)
-};
 
-function removeHeroBorder() {
-    const imgContainer = document.querySelector('.image-container');
+function removeWelcomeText() {
     const welcomeText = document.getElementById('welcome-text');
     welcomeText.style.animationName = 'dissolve';
     welcomeText.addEventListener('animationend', ()=>{
       welcomeText.style.display='none';
-      imgContainer.style.animationName = 'shrink-img-container'
     });
-    imgContainer.addEventListener('animationend', shrinkHero);
 }
 
-setTimeout(removeHeroBorder, 4000);
+setTimeout(removeWelcomeText, 4000);
 
 
 const projectFlag = document.querySelector('.toggle');

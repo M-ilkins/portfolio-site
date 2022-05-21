@@ -10,8 +10,8 @@ body {
     find a proper color theme!
     Possibly brown, green, pink ?
      */
-    /* background-color: rgb(63, 62, 62); */
     background-color: rgb(42, 42, 42);
+    /* background-color: rgb(63, 62, 62); */
     /* background-color: rgb(139, 102, 65); */
     /* background-color: rgb(112, 83, 53); */
     /* background-color: rgb(75, 57, 37); */
@@ -25,10 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     width: 80vw;
     margin: auto;
-    height: 50vh;
     margin-top: 5%;
     margin-bottom: 10%;
     box-shadow: 0px 0px 23px 8px rgb(175, 110, 179);
@@ -59,17 +59,16 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     max-width: 100%;
     max-height: 100%;
-    height: 100%;
 }
 
 .bio {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     color: white;
     background-color: rgb(112, 80, 40);
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
 
@@ -84,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     width: 80vw;
+    height: 100%;
     margin: auto;
     margin-bottom: 10%;
     box-shadow: 0px 0px 23px 8px rgb(112, 80, 40);
@@ -121,7 +121,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-info-panel {
     position: relative;
-    top: -10px;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -133,10 +132,10 @@ h1, h2, h3, h4, h5, h6 {
 .footer-container {
     width: 80vw;
     margin: auto;
-    text-align: center;
     background-color: rgb(175, 110, 179);
     margin-bottom: 5%;
     box-shadow: 0px 0px 23px 8px rgb(130, 225, 150);
+
 }
 
 @keyframes shrink-img-container {
@@ -154,3 +153,27 @@ h1, h2, h3, h4, h5, h6 {
     to {
         color: rgba(255, 255, 255, 0);}
 }
+
+@media only screen and (max-width: 510px) {
+    #welcome-text {
+        font-size: 0.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 650px) {
+    #welcome-text {
+        font-size: 1.2rem;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    #welcome-text {
+        font-size: 1.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    #welcome-text {
+        font-size: 2rem;
+    }
+  }

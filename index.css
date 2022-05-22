@@ -20,6 +20,14 @@ body {
     letter-spacing: 2px;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -99,19 +107,6 @@ body {
 
 .project-img:hover {
     opacity: 1;
-}
-
-.footer-container {
-    width: fit-content;
-    margin: auto;
-    background-color: rgba(176, 110, 179, 0.589);
-    color: white;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.footer-container a {
-    color: white;
 }
 
 @keyframes shrink-img-container {

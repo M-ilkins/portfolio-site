@@ -61,8 +61,8 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: white;
-    background-color: rgb(112, 80, 40);
+    color: black;
+    background-color: rgb(130, 225, 150);
     width: 100%;
 }
 
@@ -73,28 +73,9 @@ body {
 
 
 .projects-container {
-    display: flex;
-    align-items: center;
     width: 50vw;
-    height: 50vh;
     margin: auto;
     margin-bottom: 10%;
-    box-shadow: 0px 0px 23px 8px rgb(112, 80, 40);
-}
-
-.toggle {
-    cursor: pointer;
-    border: none;
-    text-align: center;
-    transition-duration: 0.4s;
-    padding: 5px;
-    position: absolute;
-    background-color: rgb(130, 225, 150);
-    top: -23px;
-}
-
-.toggle:hover {
-    box-shadow: 0px 0px 11px 1px #FFFFFF;
 }
 
 .project-img-container {
@@ -111,17 +92,6 @@ body {
 
 .project-img:hover {
     opacity: 1;
-}
-
-.project-info-panel {
-    position: relative;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(130, 225, 150);
 }
 
 .footer-container {

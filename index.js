@@ -30,24 +30,3 @@ function removeWelcomeText() {
 
 setTimeout(removeWelcomeText, 4000);
 
-
-const projectFlag = document.querySelector('.toggle');
-const projectInfoPanel = document.querySelector('.project-info-panel');
-
-
-function displayProjectInfo() {
-  projectFlag.innerText = 'hide info';
-  const projectInfoPanel = document.querySelector('.project-info-panel');
-  projectInfoPanel.style.display = 'flex';
-}
-
-function hideProjectInfo() {
-  projectFlag.innerText = 'show info';
-  const projectInfoPanel = document.querySelector('.project-info-panel');
-  projectInfoPanel.style.display = 'none';
-}
-
-projectFlag.addEventListener('click', ()=> {
-  projectInfoPanel.style.display !== 'flex' ? displayProjectInfo() : hideProjectInfo();
-});
-

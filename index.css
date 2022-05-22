@@ -10,7 +10,7 @@ body {
     find a proper color theme!
     Possibly brown, green, pink ?
      */
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(0, 0, 0);
     /* background-color: rgb(63, 62, 62); */
     /* background-color: rgb(139, 102, 65); */
     /* background-color: rgb(112, 83, 53); */
@@ -25,10 +25,11 @@ body {
     flex-direction: column;
     align-items: center;
     width: 80vw;
+    border-radius: 10px;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 10%;
-    box-shadow: 0px 0px 23px 8px rgb(175, 110, 179);
+    /* box-shadow: 0px 0px 23px 8px rgb(175, 110, 179); */
 }
 
 .image-container {
@@ -54,6 +55,8 @@ body {
     position: relative;
     max-width: 100%;
     max-height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .bio {
@@ -61,14 +64,18 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: black;
-    background-color: rgb(130, 225, 150);
+    color: white;
+    background-color: rgba(176, 110, 179, 0.589);
     width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .project-section-title {
     color: white;
     margin-bottom: 5%;
+    margin-top: 5%;
+    letter-spacing: 1rem;
 }
 
 
@@ -95,12 +102,16 @@ body {
 }
 
 .footer-container {
-    width: 80vw;
+    width: fit-content;
     margin: auto;
-    background-color: rgb(175, 110, 179);
-    margin-bottom: 5%;
-    margin-top: 10vh;
-    box-shadow: 0px 0px 20px -5px rgb(130, 225, 150);
+    background-color: rgba(176, 110, 179, 0.589);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.footer-container a {
+    color: white;
 }
 
 @keyframes shrink-img-container {
@@ -121,7 +132,7 @@ body {
 
 @media only screen and (max-width: 510px) {
     #welcome-text {
-        font-size: 0.5rem;
+        font-size: 0.1rem;
     }
   }
 

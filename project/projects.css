@@ -26,7 +26,7 @@ a {
 
 .project-section-title {
     opacity: 0;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     color: white;
     margin-bottom: 5%;
@@ -51,7 +51,7 @@ a {
 }
 
 .project-img {
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-timing-function: ease-in;
     opacity: 0;
     display: block;

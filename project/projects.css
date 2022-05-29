@@ -6,12 +6,22 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background: linear-gradient(90deg, rgba(224,159,230,1) 0%, rgba(208,121,80,1) 50%, rgba(124,246,249,1) 100%);
     animation-duration: 5s;
     animation-timing-function: linear;
     font-family: 'Mukta', sans-serif;
     text-align: center;
     letter-spacing: 2px;
+}
+
+a {
+    color: white;
 }
 
 .project-section-title {

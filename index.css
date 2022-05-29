@@ -6,13 +6,18 @@
 }
 
 body {
-    background: linear-gradient(90deg, rgba(224,159,230,1) 0%, rgba(134,61,26,1) 50%, rgba(56,145,147,1) 100%);
+    background: linear-gradient(90deg, rgba(224,159,230,1) 0%, rgba(208,121,80,1) 50%, rgba(124,246,249,1) 100%);
+    animation-duration: 5s;
+    animation-timing-function: linear;
     font-family: 'Mukta', sans-serif;
     text-align: center;
     letter-spacing: 2px;
 }
 
 .project-section-title {
+    opacity: 0;
+    animation-duration: 5s;
+    animation-timing-function: linear;
     color: white;
     margin-bottom: 5%;
     margin-top: 5%;
@@ -36,12 +41,30 @@ body {
 }
 
 .project-img {
-    display: block;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
     opacity: 0;
+    display: block;
     width: 100%;
-    transition: opacity 2s;
+    transition: opacity 1s;
 }
 
-.project-img:hover {
-    opacity: 1;
+/* ANIMATIONS */
+
+@keyframes backgroundWave {
+    0% {background: linear-gradient(90deg, rgba(224,159,230,1) 0%, rgba(134,61,26,1) 50%, rgba(56,145,147,1) 100%);}
+    25% {background: linear-gradient(90deg, rgba(250,199,255,1) 0%, rgba(134,61,26,1) 50%, rgba(56,145,147,1) 100%);}
+    50% {background: linear-gradient(90deg, rgba(224,159,230,1) 0%, rgba(208,121,80,1) 50%, rgba(56,145,147,1) 100%);}
+    75% {background: linear-gradient(90deg, rgba(224,159,230,1) 0%, rgba(208,121,80,1) 50%, rgba(124,246,249,1) 100%);}
+    100% {background: linear-gradient(90deg, rgba(224,159,230,1) 0%, rgba(208,121,80,1) 50%, rgba(124,246,249,1) 100%);}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 0.5;}
+}
+
+@keyframes textFadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
